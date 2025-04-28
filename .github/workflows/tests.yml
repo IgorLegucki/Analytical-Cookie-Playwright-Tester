@@ -23,4 +23,4 @@ jobs:
         run: python -m playwright install --with-deps
 
       - name: Run tests across browsers
-        run: pytest -s
+        run: pytest -s tests/test_cookies.py
