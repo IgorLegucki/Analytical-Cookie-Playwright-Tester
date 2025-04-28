@@ -5,7 +5,7 @@ from ing_cookie_test.ing_browser import click_customize_button, accept_selected_
 @pytest.mark.parametrize("browser_name", ["chromium", "firefox", "webkit"])
 def test_accept_analytics_cookies(browser_name):
     with sync_playwright() as playwright:
-        browser = getattr(playwright, browser_name).launch(headless=True)
+        browser = getattr(playwright, browser_name).launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
 

@@ -1,0 +1,10 @@
+pytest -s tests/test_cookies.py
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/IgorLegucki/ING_playwright_tests.git
+git push -u origin main
+
+git config --global user.name "IgorLegucki"
+git config --global user.email "legucki.igor@gmail.com"
